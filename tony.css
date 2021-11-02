@@ -1,0 +1,280 @@
+/* Universal properties */
+
+* {
+  box-sizing: border-box;
+  font-family: Andale Mono, monospace;
+  background-color: white;
+}
+h1 {
+  font-size: 70px;
+  font-weight: bolder;
+  color: black;
+  padding: 0px 50px;
+}
+h2 {
+  padding: 0px;
+  margin: 0px;
+  font-weight: lighter;
+  background: rgba(204, 204, 204, 0);
+}
+a {
+  color: #c5c6c7;
+  text-decoration: none;
+  background: rgba(204, 204, 204, 0);
+}
+a:hover {
+  text-decoration: initial;
+}
+p {
+  background: rgba(204, 204, 204, 0);
+}
+b {
+  background: rgba(204, 204, 204, 0);
+}
+
+/* Navigation bar */
+
+.navbar {
+  overflow: hidden;
+  background-color: #1f2833;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  font-size: 30px;
+  padding: 10px;
+  z-index: 999;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #45a29e;
+  text-align: center;
+  padding: 10px 16px;
+  text-decoration: none;
+}
+.navbar a:hover {
+  background: #c5c6c7;
+  color: black;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+/* Landing page */
+
+.landing-page {
+  font-size: 40px;
+  color: white;
+  padding: 50px 400px;
+  text-align: center;
+  background-size: cover;
+  background-image: url(images/Background-image3.jpg);
+}
+#landingHello {
+  font-size: 300px;
+  font-weight: 1000;
+  color: #66fcf1;
+  background: rgba(204, 204, 204, 0);
+  padding-top: 60px;
+}
+#landingButton {
+  background: rgba(204, 204, 204, 0);
+  padding: 20px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #45a29e;
+  border-radius: 10px;
+}
+
+/* Services page */
+
+.services {
+  font-size: 30px;
+  padding-left: 100px;
+}
+.services-container {
+  display: flex;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+}
+#serviceImage {
+  width: 900px;
+  height: 950px;
+  padding: 0px;
+}
+#service-header {
+  padding-top: 70px;
+  padding-left: 0;
+  margin-left: 0;
+}
+#services-content {
+  margin-left: 70px;
+  margin-right: 50px;
+}
+#serviceButton {
+  color: black;
+  padding: 20px;
+  margin-top: 100px;
+  border-style: solid;
+  border-width: 5px;
+  border-color: #45a29e;
+  border-radius: 10px;
+}
+
+/* Projects section */
+
+.projects {
+  border: 50px 0px;
+  padding-bottom: 150px;
+}
+#projects-header {
+  margin: 0px;
+  margin-left: 100px;
+  padding-top: 80px;
+  padding-bottom: 40px;
+  text-align: center;
+}
+.projects-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-content: space-between;
+  height: 650px;
+  margin: 0 300px;
+}
+.container {
+  position: relative;
+  width: 50%;
+  max-width: 600px;
+}
+.gallery {
+  object-fit: contain;
+  width: 600px;
+  height: 300px;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #1f2833;
+}
+.overlay {
+  position: absolute;
+  bottom: 0;
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.9);
+  color: #f1f1f1;
+  height: 305px;
+  width: 600px;
+  transition: 0.5s ease;
+  opacity: 0;
+  color: white;
+  font-size: 30px;
+  text-align: center;
+  padding-top: 120px;
+}
+#box {
+  background-color: red;
+  height: 50px;
+  width: 50px;
+  position: relative;
+  animation-name: name;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+
+/* Loop */
+
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: 0, 60px;
+}
+
+/* Contact section */
+
+#contact-header {
+  padding-top: 25px;
+}
+.contact {
+  margin-bottom: 100px;
+}
+.contact-container {
+  display: flex;
+  justify-content: space-evenly;
+  text-align: center;
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+}
+input {
+  width: 500px;
+  height: 50px;
+  margin: 5px;
+  border-radius: 10px;
+}
+.form {
+  font-family: Courier;
+  font-size: 30px;
+}
+#message {
+  font-family: Courier;
+  font-size: 30px;
+  height: 200px;
+  width: 1020px;
+  border-radius: 10px;
+}
+#submit-button {
+  width: 150px;
+  font-family: Courier;
+  font-size: 40px;
+  border-width: 5px;
+  border-color: #45a29e;
+  border-radius: 10px;
+}
+
+/* Footer section */
+
+.footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  background-color: #1f2833;
+}
+.info {
+  padding: 30px;
+  padding-bottom: 3px;
+  font-size: 30px;
+  color: white;
+  background: rgba(204, 204, 204, 0);
+}
+
+/* Animation in Projects section   */
+
+@keyframes name {
+  0% {
+    background-color: red;
+    left: 0;
+    top: 0;
+  }
+  25% {
+    background-color: yellow;
+    left: 100px;
+    top: 0;
+  }
+  50% {
+    background-color: blue;
+    left: 100px;
+    top: 100px;
+  }
+  75% {
+    background-color: green;
+    left: 0;
+    top: 100px;
+  }
+  100% {
+    background-color: red;
+    left: 0;
+    top: 0;
+  }
+}
